@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/gelirGider.css" />
+    <script src="assets/js/gelirGider.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="gelirGiderHeader" >
+        <h1>Gelir-Gider Listesi</h1>
+        <button id="AddGelirGiderBtn">Ekle</button>
+      </header>
+
+      <div class="gelirGiderList" id="gelirGiderContainer"></div>
+
+      <dialog id="modal">
+      <form method="dialog" autocomplete="off" id="gelirGiderForm">
+
+        <div class="form-group">
+          <h2 class="modelAddNew">Listeye Ekle</h2>
+          <h2 class="modelEdit"></h2>
+          <label class="form_label" for="gelir">Gelir Tutarı :</label>
+          <input class="income" required type="number"  id="gelir"name="gelir"/>
+        </div>
+        <div class="form-group">
+          <label class="form_label" for="gider">Gider Tutarı :</label>
+          <input class="expense" type="number" id="gider" name="gider" />
+        </div>
+        <div class="form-group">
+          <label class="form_label" for="expenseList">Giderlerinizi yazın :</label>
+          <input class="expenseList" type="text" id="" name="expenseList" />
+        </div>
+        <button type="submit" class="modelAddNew">Hesapla</button> 
+        <button  class="modelEdit">Düzenle</button>
+        <button type="button" onclick="adressBookForm.reset();modal.close();">Vazgeç</button></p>
+        <input type="hidden" name="id" value="">
+      </form>
+    </dialog>
+
+
+      <!-- <div class="tabloList">
+          <h2>gelir listesi</h2>
+          <ul class="gelirListesi"></ul>
+          <h2>gider listesi</h2>
+          <ul class="giderListesi"></ul>
+          <h2>Kazanç</h2>
+          <ul class="kazancListesi"></ul>
+      </div> -->
+    </div>
+  </body>
+</html>
